@@ -1,43 +1,43 @@
-from cell import cell
+from cell import Cell
 
 
-class entity(cell):
+class Entity(Cell):
 
     def __init__(self, name, attack, defence, agility):
         super().__init__()
-        self.__name = name
-        self.__attack = attack
-        self.__defence = defence
-        self.__agility = agility
+        self._name = name
+        self._attack = attack
+        self._defence = defence
+        self._agility = agility
 
     @property
     def name(self):
-        return self.__name
+        return self._name
 
     @name.setter
     def name(self, value):
-        self.__name = value
+        self._name = value
 
     @property
     def attack(self):
-        return self.__attack
+        return self._attack
 
     @attack.setter
     def attack(self, value):
-        self.__attack = value
+        self._attack = value
 
     @property
     def defence(self):
-        return self.__defence
+        return self._defence
 
     @defence.setter
     def defence(self, value):
-        self.__defence = value
+        self._defence = value
 
     @property
     def agility(self):
-        return self.__agility
+        return self._agility
 
     @agility.setter
     def agility(self, value):
-        self.__agility = value
+        self._agility = value

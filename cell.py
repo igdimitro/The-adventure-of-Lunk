@@ -1,21 +1,21 @@
-class cell:
+class Cell:
 
     def __init__(self):
-        self.__coords = (0, 0)
-        self.__type = ""
+        self._coords = (0, 0)
+        self._type = ""
 
     @property
     def coords(self):
-        return self.__coords
+        return self._coords
 
     @coords.setter
     def coords(self, value):
-        self.__coords = value
+        self._coords = value
 
     @property
     def type(self):
-        return self.__type
+        return self._type
 
     @type.setter
     def type(self, value):
-        self.__type = value
+        self._type = value

@@ -1,7 +1,7 @@
-from entity import entity
+from entity import Entity
 
 
-class monster(entity):
+class Monster(Entity):
 
     def __init__(self, name, attack, defence, agility, health):
         super().__init__(name, attack, defence, agility)

@@ -1,7 +1,7 @@
-from entity import entity
+from entity import Entity
 
 
-class hero(entity):
+class Hero(Entity):
 
     def __init__(self, name, attack, defence, agility):
         super().__init__(name, attack, defence, agility)
